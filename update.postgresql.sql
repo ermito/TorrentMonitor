@@ -28,8 +28,4 @@ ALTER TABLE credentials ADD COLUMN passkey varchar(255) DEFAULT NULL;
 
 DELETE FROM settings WHERE "id" = '1';
 
-DELETE FROM credentials WHERE "id" = '3';
-DELETE FROM torrent WHERE "tracker" = 'lostfilm.tv';
-DELETE FROM warning WHERE "where" = 'lostfilm.tv';
-
 ALTER TABLE torrent ALTER COLUMN torrent_id TYPE varchar(150);

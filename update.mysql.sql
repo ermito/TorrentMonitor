@@ -38,8 +38,4 @@ ALTER TABLE `torrent` ADD auto_update tinyint(1) unsigned NOT NULL DEFAULT '0';
 
 ALTER TABLE `credentials` ADD passkey varchar(255) DEFAULT NULL;
 
-DELETE FROM `credentials` WHERE `id` = '3';
-DELETE FROM `torrent` WHERE `tracker` = 'lostfilm.tv';
-DELETE FROM `warning` WHERE `where` = 'lostfilm.tv';
-
 ALTER TABLE `torrent` MODIFY `torrent_id` varchar(150);
